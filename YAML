@@ -1,0 +1,6 @@
+YAML
+
+Kubernetes uses YAML files as input for the creation of objects such as PODs, Replicas, Deployments, Services etc. 
+All of these follow similar structure. 
+A kubernetes definition file always contains 4 top level fields. 
+The apiVersion, kind, metadata and spec.
