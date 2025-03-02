@@ -1,0 +1,6 @@
+Replication Controllers and ReplicaSets
+
+Controllers are the backbone of Kubernetes, responsible for monitoring and managing Kubernetes objects to ensure the desired state is maintained.
+
+Both Replication Controllers and ReplicaSets serve the same fundamental purpose—ensuring that a specified number of pod replicas are running at all times.
+However, they are not identical. Replication Controller is an older technology that has been largely replaced by ReplicaSet, which is now the recommended method for managing pod replication in Kubernetes.
