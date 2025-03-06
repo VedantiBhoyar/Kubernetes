@@ -1,0 +1,13 @@
+Each pod gets a unique IP address: Every pod in the cluster has its own IP, making communication simple.
+
+Containers in the same pod talk via localhost: Since all containers inside a pod share the same network, they can communicate as if they were on the same machine.
+
+Pods can talk to each other directly: No matter which node a pod is running on, it can communicate with any other pod in the cluster without needing special configurations.
+
+Services help expose pods: A Service provides a stable way to access a pod (or group of pods) even if their IPs change.
+
+Ingress helps handle external traffic: If you want users from outside the cluster to access your app, you use an Ingress (like a smart router for HTTP/HTTPS traffic).
+
+Network Policies control access: You can set rules to allow or block traffic between pods to improve security.
+
+Kubernetes uses DNS for service discovery: Instead of remembering IPs, you can use service names like my-service.default.svc.cluster.local to communicate between applications.
